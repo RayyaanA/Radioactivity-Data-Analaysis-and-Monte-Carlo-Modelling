@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project investigates how the measured count rate from a Strontium- 90 (Sr- 90) beta source varies with source– detector separation. The experimental dataset contains measurements at 32 separations, ranging from 0.010 m to 0.850 m.
+This project investigates how the measured count rate from a Strontium- 90 (Sr-90) beta source varies with source– detector separation. The experimental dataset contains measurements at 32 separations, ranging from 0.010 m to 0.850 m.
 
 The main objective is to investigate whether the measured distance dependence follows an inverse-square relationship, and whether a more complete description requires additional effects such as finite source and detector geometry, air attenuation and detector dead time.
 
@@ -51,9 +51,9 @@ This simulation isolates geometric effects. It does not include energy loss, air
 
 ### 3. Beta- spectrum air- transmission Monte Carlo — `Monte Carlo Air Attenuation.py`
 
-This script estimates the approximate transmission of Sr- 90/ Y- 90 beta electrons through air.
+This script estimates the approximate transmission of Sr-90/ Y-90 beta electrons through air.
 
-Electron kinetic energies are sampled from approximate allowed beta spectra for Sr- 90 and Y- 90, using endpoint energies of 0.546 MeV and 2.28 MeV respectively, with an assumed 50:50 mixture.
+Electron kinetic energies are sampled from approximate allowed beta spectra for Sr-90 and Y-90, using endpoint energies of 0.546 MeV and 2.28 MeV respectively, with an assumed 50:50 mixture.
 
 The sampled energies are converted into approximate continuous- slowing- down approximation (CSDA) ranges using an empirical range– energy relationship. For each air path length, an electron is counted as transmitted if its initial CSDA range exceeds the corresponding air areal density.
 
@@ -76,7 +76,7 @@ Each family is evaluated with different combinations of exponential attenuation,
 
 The fits use covariance-weighted generalised least squares. The uncertainty treatment includes Poisson counting uncertainty, correlated background uncertainty, ruler- distance uncertainty and the shared distance- offset contribution. Gauss– Hermite quadrature is used to account for distance uncertainty.
 
-The successful configurations are compared using chi-squared, reduced chi- squared, degrees of freedom and p- values. This provides a systematic assessment of how different modelling assumptions and experimental corrections affect the agreement with the measured data.
+The successful configurations are compared using chi-squared, reduced chi-squared, degrees of freedom and p- values. This provides a systematic assessment of how different modelling assumptions and experimental corrections affect the agreement with the measured data.
 
 The 10.5 mm distance offset and 2.5 μs dead-time value are fixed scenarios rather than independently fitted measurements. The best- ranked configuration should not automatically be interpreted as the physically correct model.
 
@@ -86,11 +86,11 @@ The main five- model analysis found that all five full- range models were reject
 
 Key results include:
 
-- The inverse- square model gave a reduced chi- squared of 50.19, indicating a poor fit across the full measurement range.
+- The inverse- square model gave a reduced chi-squared of 50.19, indicating a poor fit across the full measurement range.
 - The free power- law model gave a fitted exponent of 2.098 ± 0.004. Although this is close to the inverse- square exponent of 2, its goodness of fit remained poor.
-- Including effective exponential attenuation substantially improved the fit, giving a reduced chi- squared of 12.15.
-- Adding finite geometry and an additional power- law correction produced a further improvement, giving a reduced chi- squared of 11.77.
-- The corrected R(d) × d² quantity was consistent with a constant over the selected interval from 0.200 m to 0.325 m, with a reduced chi- squared of 1.56 and p- value of 0.166. This is an exploratory interval result, not evidence that inverse- square behaviour holds across the full range.
+- Including effective exponential attenuation substantially improved the fit, giving a reduced chi-squared of 12.15.
+- Adding finite geometry and an additional power- law correction produced a further improvement, giving a reduced chi-squared of 11.77.
+- The corrected R(d) × d² quantity was consistent with a constant over the selected interval from 0.200 m to 0.325 m, with a reduced chi-squared of 1.56 and p- value of 0.166. This is an exploratory interval result, not evidence that inverse- square behaviour holds across the full range.
 - Applying the dead- time correction improved the best- model chi-squared by approximately 2.2%, but did not resolve the remaining disagreement.
 
 Overall, attenuation improved the description of the measured distance dependence, but none of the tested full- range models provided a satisfactory complete explanation of the experimental data.
