@@ -1,0 +1,1 @@
+This folder contains the eight plots generated during the experimental data analysis and Monte Carlo simulations. The figures illustrate the model comparisons, geometric acceptance calculations, air attenuation results and other key findings of the investigation.
