@@ -104,6 +104,7 @@ The supplementary simulations investigate geometric acceptance and approximate b
 - **SciPy** — nonlinear curve fitting, least- squares optimisation, numerical integration, statistical distributions and linear algebra.
 - **Matplotlib** — visualisation of experimental measurements, fitted models and Monte Carlo results.
 
+
 ## Running the code
 
 ### Requirements
@@ -116,17 +117,28 @@ python -m pip install numpy scipy matplotlib
 
 ### Running the scripts
 
-Run each script from the repository directory:
+From the root directory of the repository, run each script using:
 
 ```bash
-python Radioactivity Analysis.py
-python "Monte Carlo Exponent Fit.py"
-python "Monte Carlo Air Attenuation.py"
-python "All Models Test.py"
+python "code/Radioactivity Analysis.py"
+python "code/Monte Carlo Exponent Fit.py"
+python "code/Monte Carlo Air Attenuation.py"
+python "code/All Models Test.py"
 ```
 
-The experimental measurements required by `Radioactivity Analysis.py` and `All Models Test.py` are embedded in the scripts, so separate CSV input files are not required for these analyses.
+The experimental measurements required by `Radioactivity Analysis.py` and `All Models Test.py` are embedded directly in the scripts, so separate CSV input files are not required.
 
-The scripts generate figures using Matplotlib. The air- transmission script also saves its transmission plot and fitted- coefficient histogram in the working directory. The other scripts display their figures without automatically saving them.
+### Figure outputs
 
-The Monte Carlo scripts use fixed random seeds so that their sampled results can be reproduced. The air- transmission simulation is computationally intensive because it samples 1,000,000 particles in each of 100 independent simulations.
+All four scripts generate figures using Matplotlib. The figures are both displayed and saved as PNG files in the current working directory.
+
+- **`Radioactivity Analysis.py`** saves three figures: `Log Plot of Models.png`, `Rd^2 Plot.png` and `Range Scan.png`.
+- **`Monte Carlo Exponent Fit.py`** saves `Exponent Fit.png` and `Exponent Histogram.png`.
+- **`Monte Carlo Air Attenuation.py`** saves `Air Attenuation Fit.png` and `Air Attenuation Histogram.png`.
+- **`All Models Test.py`** saves `All Models Comparison.png`.
+
+The saved figures are written to the directory from which the scripts are executed, rather than automatically being placed in the repository's `figures/` folder.
+
+### Reproducibility and computational requirements
+
+The Monte Carlo scripts use fixed random seeds to make their sampled results reproducible. The air-attenuation simulation is computationally intensive, sampling 1,000,000 beta particles in each of 100 independent simulations.
