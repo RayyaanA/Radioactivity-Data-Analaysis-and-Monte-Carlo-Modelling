@@ -38,7 +38,7 @@ FIT_MAX_DISTANCE_M = float(DISTANCES_M.max())
 #rather than over- weighting the centre of the circular source.
 #Generate source positions uniformly over the circular face.
 def sample_uniform_disk(rng, n, radius):
-    """Sample points uniformly by area over a circular source face."""
+    #Sample points uniformly by area over a circular source face.
     radius_sample = radius * np.sqrt(rng.random(n))
     angle = 2.0 * np.pi * rng.random(n)
     x = radius_sample * np.cos(angle)
@@ -47,7 +47,7 @@ def sample_uniform_disk(rng, n, radius):
 
 #Generate detector positions uniformly over the rectangular active face.
 def sample_uniform_rectangle(rng, n, width, height):
-    """Sample points uniformly over the active detector face."""
+    #Sample points uniformly over the active detector face.
     x = rng.uniform(-width / 2.0, width / 2.0, n)
     y = rng.uniform(-height / 2.0, height / 2.0, n)
     return x, y
