@@ -675,7 +675,7 @@ ax_models_log.legend(
 )
 
 fig_models_log.tight_layout()
-plt.savefig("Log plot of models.png")
+plt.savefig("Log Plot of Models.png")
 
 #-------- Calculate Rd^2 and its Uncertainty --------
 
@@ -1015,7 +1015,7 @@ ax_rd2.legend(
 )
 
 fig_rd2.tight_layout()
-plt.savefig("Rd^2 plot.png")
+plt.savefig("Rd^2 Plot.png")
 
 #-------- Final Settings And Completion --------
 print("\nUNCERTAINTY AND MODEL SETTINGS")
@@ -1415,5 +1415,5 @@ print(
 
 print("\nRange scan complete.")
 
-plt.savefig("Range scan.png")
+plt.savefig("Range Scan.png")
 plt.show()
