@@ -1,6 +1,6 @@
-# Sr- 90 Radioactivity Data Analysis
+# Sr-90 Radioactivity Data Analysis
 
-A computational investigation of the distance dependence of Sr- 90 beta-particle count rates, combining experimental data analysis, mathematical modelling and Monte Carlo simulations.
+A computational investigation of the distance dependence of Sr-90 beta-particle count rates, combining experimental data analysis, mathematical modelling and Monte Carlo simulations.
 
 ## Project Overview
 
