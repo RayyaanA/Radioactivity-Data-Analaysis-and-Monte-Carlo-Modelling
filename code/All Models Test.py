@@ -646,7 +646,7 @@ def main():
     ax.set_title("Reduced chi-squared: all fitted model combinations")
     ax.grid(axis="x", alpha=0.25)
     fig.tight_layout()
-    plt.savefig("all models comparison.png")
+    plt.savefig("All Models Comparison.png")
     plt.show()
 
 if __name__ == "__main__":
