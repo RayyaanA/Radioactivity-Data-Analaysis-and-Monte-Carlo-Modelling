@@ -188,7 +188,7 @@ plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()
 plt.savefig(
-    "beta_air_attenuation_monte_carlo.png",
+    "Air Attenuation Fit.png",
     dpi=180,
     bbox_inches="tight"
 )
@@ -219,5 +219,5 @@ plt.title("Monte Carlo distribution of effective air-attenuation coefficients")
 plt.grid(axis="y", alpha=0.2)
 plt.legend()
 plt.tight_layout()
-plt.savefig("air attenuation histogram.png")
+plt.savefig("Air Attenuation Histogram.png")
 plt.show()
