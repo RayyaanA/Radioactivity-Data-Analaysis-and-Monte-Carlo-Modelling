@@ -166,7 +166,7 @@ def plot_acceptance_curve(mean_probabilities, mean_probability_errors,
     ax.set_title("Finite-source, finite-detector particle Monte Carlo")
     ax.grid(True, which="both", alpha=0.25)
     ax.legend()
-    plt.savefig("exponent fit.png")
+    plt.savefig("Exponent Fit.png")
     fig.tight_layout()
 
 def plot_exponent_histogram(fitted_exponents):
@@ -352,7 +352,7 @@ def main():
 
     #A single show call displays both figures together in standard
     # interactive Matplotlib backends.
-    plt.savefig("exponent histogram.png")
+    plt.savefig("Exponent Histogram.png")
     plt.show()
 
     print("\nAll fitted exponent values:")
