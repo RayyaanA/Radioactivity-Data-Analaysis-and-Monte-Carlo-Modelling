@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project investigates how the measured count rate from a Strontium- 90 (Sr-90) beta source varies with source– detector separation. The experimental dataset contains measurements at 32 separations, ranging from 0.010 m to 0.850 m.
+This project investigates how the measured count rate from a Strontium-90 (Sr-90) beta source varies with source– detector separation. The experimental dataset contains measurements at 32 separations, ranging from 0.010 m to 0.850 m.
 
 The main objective is to investigate whether the measured distance dependence follows an inverse-square relationship, and whether a more complete description requires additional effects such as finite source and detector geometry, air attenuation and detector dead time.
 
@@ -15,7 +15,7 @@ The project combines experimental data analysis, statistical modelling, numerica
 - Account for background contributions, detector dead time and correlated measurement uncertainties.
 - Model finite source and detector dimensions using numerical integration.
 - Use Monte Carlo sampling to investigate geometric acceptance and approximate beta- electron transmission through air.
-- Compare alternative model configurations and assess their agreement with the experimental data using goodness- of- fit statistics.
+- Compare alternative model configurations and assess their agreement with the experimental data using goodness-of-fit statistics.
 
 ## Methods
 
